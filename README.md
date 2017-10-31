@@ -1,5 +1,4 @@
-# Blockchain (https://courses.edx.org)
-  
+# Blockchain 
   * **Overview**
     * Linux Foundation
       * Big data and analytics: ODPi, R Consortium
@@ -25,4 +24,7 @@
           * Sawtooth
           * Fabric
         * https://www.hyperledger.org/
+ * References
+   * https://courses.edx.org
+   * https://www.safaribooksonline.com/library/view/mastering-blockchain/9781787125445/
    
