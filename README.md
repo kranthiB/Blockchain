@@ -164,18 +164,53 @@
     * distributed and publicly-owned infrastructure, operating as 'permissionless' system.
     * One of the biggest inventions and problems that it solved was that of the **double spend**  problem
     * is focused upon transferring monetary value between parties, it has a very limited programming language
+    * *Bitcoin and Cryptoeconomics*
+      * is about building systems that have certain desired properties using cryptography to prove properties about messages that happened in the past while using economic incentives defined inside the system to encourage desired properties to hold into the future
+      * in permissionless blockchains, rather than imposing barriers to entry , its open for anyone to join including malicious actors
+        * key lies in incentivizing good behavior in a critical majority of the network,such that
+          * The malicious actors cannot take over the network through an **escalated attack**.
+          * The malicious actors cannot **collude** to undertake an organized majority attack on the network.
+          * The **payoffs** of securing the network are consistently higher than the cost of attacking the network.
+          * The **cost** of attacking the network is prohibitively high.
+      * https://medium.com/@cryptoeconomics/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4
   * Ehereum Blockchains
+    * Ethereum is an open blockchain platform that lets anyone build and use decentralized applications that run on blockchain technology
+    * facilitates **scripting functionality**, or **smart contracts**,
+      * unlike the bitcoin blockchain, it does not track transactions, it also programs them
     * uses a more expansive set of programming languages and tools to allow for many other types of programs and applications
     * EVM or Ethereum Virtual Machine
-      * it runs on the Ethereum network as a Turning-complete software
+      * it runs on the Ethereum network as a Turning-complete software with its native crytocurrency called **ether**
     * Key features
-      * immutability of data
+      * immutability of data 
       * unauthorized users cannot make changes of data
       * is desgined to make corruption and tamper proof applications
       * secure apps are sent decentralized and secured with cryptograpy
         * they are processed against hacking attacks and fraudulent activities
       * is designed with zero downtime
+        * not run on central servers in a certain geographical location
+        * Instead, the computing power that runs the network is contributed by nodes that are spread across the globe
+        * they never go down and, in general, cannot be switched off
       * if some of the machines go down, network maintains a stable state
+    * *Dapps*
+      * Decentralized applications
+      * they are cryptographically secured
+      * can referred as 'secure applications'
+      * Example applications are
+        * **Augur**, which is a Decentralized Prediction Market. Learn more at https://augur.net/.
+        * **Digix**, which tokenizes gold on Ethereum. Learn more at: https://digix.global/.
+        * **Maker**, which is a Decentralized Autonomous Organization (DAO). Learn more at: https://makerdao.com/.
+    * *Smart Contracts*
+      * hypothetical example
+        * in an equity raise, transfer amount X from the investor to the company upon receiving the given shares from the company
+        * The monetary amount X, which was pre-validated by the company for the transaction (much like in a credit card purchase), is held in escrow by the smart contract, until the shares have been received by the investor
+        * Any kind of arbitrary sophisticated business logic can be committed to the blockchain
+        * Ethereum blockchain only encodes these 'rules of the games'
+        * The actual payoffs occur by interacting with the blockchain
+      * ![image](https://user-images.githubusercontent.com/20100300/32277497-dfa9e6fe-becf-11e7-81a0-191f2e940eda.png)
+        1. The smart contract encodes the agreement between the company raising funds and its investors (Panel 1)
+        2. The smart contract sits on the Ethereum public blockchain, and is run on the Ethereum Virtual Machine (EVM). Once hitting a triggering event, like an expiration date or a strike price that has been pre-coded, the smart contract automatically executes as per the business logic (Panel 2)
+        3. As an added benefit, regulators are able to scrutinize the market activity on an ongoing basis, without compromising the identity of specific players in a permissionless public blockchain, as Ethereum (Panel 3).
+    * **Note:** With the advent of the Ethereum blockchain platform and the scripting functionality or smart contracts that it enables, there are ongoing attempts to do the same for the Bitcoin blockchain, which does not allow for this, due to security reasons. **RSK**(http://www.rsk.co/) is one such smart contract platform that seeks to achieve this "with a 2-way peg to Bitcoin". The added functionality can go a long way in making the Bitcoin blockchain useful for use cases other than cash transfers.  
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
