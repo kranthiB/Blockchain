@@ -117,9 +117,11 @@
           * Proof of work
           * Proof of stake
           * Proof of Elapsed Time
+          * Proof of Burn
+          * Proo of capacity
           * Simplified Byzantine Fault Tolerance
-          * Bitcoin and ethereum uses Proof of work currently, but they are moving towards proof of stake
-          * The Hyperledger Sawtooth uses Proof of Elapsed Time.
+        * Bitcoin and ethereum uses Proof of work currently, but they are moving towards proof of stake
+        * The Hyperledger Sawtooth uses Proof of Elapsed Time.
        * Immutability of Data
          * *unchanging over time* feature makes the blockchain useful for accounting / financial transactions / identity management / asset ownership, management and transfer
          * Once a transaction is written onto the blockchain, no one can change it, or, at least, it would be extremely difficult to change it
@@ -241,7 +243,60 @@
        * we can open this transaction in ethereum using https://etherscan.io/tx/*transaction-id*. We can see
          * timestamp
          * particular block 
-         
+ * Consensus Algorithms
+   * it refers to process of achieving agreement among the network participants as to correct the state of data on the system
+   * it leads to all nodes sharing the exact same data
+   * it prevents malicious actors from manipulating the data
+   * *Proof of Work(Pow)*
+     * involes solving a computaional solving puzzle in order to create new blocks in the bitcoin blockchain. This process is known as *mining* and the networks that engage in mining are known as *miners*
+     * is the outcome of a successful mining process and, although the proof is hard to create, [it] is easy to verify
+     * https://99bitcoins.com/proof-of-work-proof-of-stake/
+     * requires a huge amount of energy to be expended, given the computationally heavy algorithm
+     * has a high latency of transaction validation
+     * concentration of mining power is located in countries where electricity is cheap
+     * In terms of the network security
+       * PoW is susceptible to the '51% attack', which refers to an attack on a blockchain by a group of miners controlling more than 50% of the network's computing power
+   * *Proof of Stake (PoS)*
+     * generalization of the Proof of Work algorithm
+     * nodes are known as the 'validators'
+       * rather than mining the blockchain, they validate the transactions to earn a transaction fee
+     * Simply put
+       * nodes are randomly selected to validate blocks, and the probability of this random selection depends on the amount of stake held
+         * if node X owns 2 coins and node Y owns 1 coin, node X is twice as likely to be called upon to validate a block of transactions
+     * specific implementation of PoS can vary, depending on the use case, or as a matter of software design
+       * Instances include **Proof of Deposit** and **Proof of Burn**
+     * saves expensive computational resources that are spent in mining under a PoW consensus regime
+   * **Proof of Elapsed Time (PoET)**
+     * emulates the Bitcoin-style Proof of Work
+     * Hyperledger's Sawtooth implementation is an example of PoET at work
+       * The validator with the shortest wait time for a particular transaction block is elected the leader.
+       * This "leader" gets to create the next block on the chain
+     * instead of mining the next block, PoET is a hybrid of a random lottery and first-come-first-serve basis
+     * each validator is given a random wait time.
+   * **Simplified Byzantine Fault Tolerance (SBFT)**
+     * implements an adopted version of the Practical Byzantine Fault Tolerant (PBFT) algorithm - https://blog.acolyer.org/2015/05/18/practical-byzantine-fault-tolerance/
+     * involves a single validator who bundles proposed transactions and forms a new block 
+     * unlike the Bitcoin blockchain, the validator is a known party, given the permissioned nature of the ledger
+     * Consensus is achieved as a result of a minimum number of other nodes in the network ratifying the new block
+     * In order to be tolerant of a Byzantine fault,
+       * the number of nodes that must reach consensus is 2f+1 in a system containing 3f+1 nodes, where f is the number of faults in the system
+         * For example, if we have 7 nodes in the system, then 5 of those nodes must agree if 2 of the nodes are acting in a faulty manner
+     * Example - http://hackingdistributed.com/2016/08/04/byzcoin/
+       * key improvements over the original Bitcoin protocol
+         * Addressing the challenge around scalability due to high latency
+         * ByzCoin transactions are irreversibly committed to the blockchain within seconds
+         * added advantage is the communication trees to "(...) optimize transaction commitments and verification under normal operations
+   * **Proof of Authority (PoA)**
+     * can be used for permissioned ledgers
+     * uses a set of 'authorities', which are designated nodes that are allowed to create new blocks and secure the ledger
+     * using PoA require sign-off by a majority of authorities in order for a block to be created.
+   * **Comparing Permissioned Consensus Approaches and Standard PoW**
+     * lottery-based algorithms - PoET / PoW
+     * voting-based methods - SBFT
+     * Lottery-based algorithms are advantageous in that they can scale to a large number of nodes
+     * Voting-based algorithms provide low-latency finality.
+     * ![image](https://user-images.githubusercontent.com/20100300/32283552-e73ea546-bee1-11e7-9c70-5dfdd6030454.png)
+
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
