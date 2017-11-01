@@ -159,6 +159,23 @@
         * tampering messages is essentially impossible
         * immutability of distributed ledger is guaranteed by the cryptography
         * nature of trusted network(of permissioned) treat like any other back-office service
+  * Bitcoin Blockchains
+    * global decentralized payment network
+    * distributed and publicly-owned infrastructure, operating as 'permissionless' system.
+    * One of the biggest inventions and problems that it solved was that of the **double spend**  problem
+    * is focused upon transferring monetary value between parties, it has a very limited programming language
+  * Ehereum Blockchains
+    * uses a more expansive set of programming languages and tools to allow for many other types of programs and applications
+    * EVM or Ethereum Virtual Machine
+      * it runs on the Ethereum network as a Turning-complete software
+    * Key features
+      * immutability of data
+      * unauthorized users cannot make changes of data
+      * is desgined to make corruption and tamper proof applications
+      * secure apps are sent decentralized and secured with cryptograpy
+        * they are processed against hacking attacks and fraudulent activities
+      * is designed with zero downtime
+      * if some of the machines go down, network maintains a stable state
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
