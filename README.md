@@ -229,6 +229,9 @@
      * ![image](https://user-images.githubusercontent.com/20100300/32278835-26e2d216-bed4-11e7-83bd-8002ed6ca23d.png)
      * ![image](https://user-images.githubusercontent.com/20100300/32278895-5b84dd2a-bed4-11e7-83f7-bc9f19085eef.png)
      * ![image](https://user-images.githubusercontent.com/20100300/32278935-7aa6fe4a-bed4-11e7-927c-9be4892fb47c.png)
+   * 'Certifying' a Document
+     * using Stamp.io, which is a certification tool.
+       * easily obtaining a 'Stampery Certificate'
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
