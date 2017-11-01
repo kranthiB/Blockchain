@@ -230,8 +230,18 @@
      * ![image](https://user-images.githubusercontent.com/20100300/32278895-5b84dd2a-bed4-11e7-83f7-bc9f19085eef.png)
      * ![image](https://user-images.githubusercontent.com/20100300/32278935-7aa6fe4a-bed4-11e7-927c-9be4892fb47c.png)
    * 'Certifying' a Document
-     * using Stamp.io, which is a certification tool.
-       * easily obtaining a 'Stampery Certificate'
+     * using Stamp.io, which is a certification tool
+       * https://stamp.io/
+       * easily obtaining a 'Stampery Certificate' which indicates
+         * name of the file
+         * when it was added to Stampery
+         * person who signed it
+       * ![image](https://user-images.githubusercontent.com/20100300/32282050-c908c95c-bedd-11e7-8d73-73a5059f928d.png)
+         * hash of this document was stored in transactions which were placed in various blocks on both Ethereum and the bitcoin blockchain
+       * we can open this transaction in ethereum using https://etherscan.io/tx/*transaction-id*. We can see
+         * timestamp
+         * particular block 
+         
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
