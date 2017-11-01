@@ -180,31 +180,31 @@
 
    * *Key/Value Pair* - It consists of two parts, one designated as a 'key', and another as a 'value'. The 'key' is an identifier that allows you to look up the 'value'. The 'value' is the data that is stored for a given 'key'.
 
-   * *Mining - The process of solving computational challenging puzzles in order to create new blocks in the Bitcoin blockchain.
+   * *Mining* - The process of solving computational challenging puzzles in order to create new blocks in the Bitcoin blockchain.
 
-     Node - Computer device attached to a blockchain network. Types of nodes include: mining nodes, validator nodes, committer nodes, and endorser nodes. Nodes are sometimes also called 'peers' because they make up the devices within a peer-to-peer network.
+   * *Node* - Computer device attached to a blockchain network. Types of nodes include: mining nodes, validator nodes, committer nodes, and endorser nodes. Nodes are sometimes also called 'peers' because they make up the devices within a peer-to-peer network.
 
-     Peer-to-Peer Network - A network witch consists of computer systems which are directly connected to each other via the Internet without a central server.
+   * *Peer-to-Peer Network* - A network witch consists of computer systems which are directly connected to each other via the Internet without a central server.
 
-     Private/Public Keys - Private keys are used to derive a public key. While private keys remain confidential, public keys are available to everyone in the network (similar to an email address). Anything encrypted with a public key can only be decrypted using its corresponding private key, and vice versa. 
+   * *Private/Public Keys* - Private keys are used to derive a public key. While private keys remain confidential, public keys are available to everyone in the network (similar to an email address). Anything encrypted with a public key can only be decrypted using its corresponding private key, and vice versa. 
 
-     Proof of Elapsed Time (PoET) - Consensus algorithm used by Hyperledger Sawtooth that utilizes a lottery function in which the node with the shortest wait time creates the next block. 
+   * *Proof of Elapsed Time (PoET)* - Consensus algorithm used by Hyperledger Sawtooth that utilizes a lottery function in which the node with the shortest wait time creates the next block. 
 
-     Proof of Stake (PoS) - Consensus algorithm where nodes are randomly selected to validate blocks, and the probability of this random selection depends on the amount of stake held.
+   * *Proof of Stake (PoS)* - Consensus algorithm where nodes are randomly selected to validate blocks, and the probability of this random selection depends on the amount of stake held.
 
-     Proof of Work (PoW) - Consensus algorithm first utilized by Bitcoin that involves solving a computational challenging puzzle in order to create a new block.
+   * *Proof of Work (PoW)* - Consensus algorithm first utilized by Bitcoin that involves solving a computational challenging puzzle in order to create a new block.
 
-     Smart Contract - Computer program that executes predefined actions when certain conditions within the system are met. Smart contracts were first proposed by Nick Szabo in 1996 (http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
+   * *Smart Contract* - Computer program that executes predefined actions when certain conditions within the system are met. Smart contracts were first proposed by Nick Szabo in 1996 (http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-     State - Contains up-to-date data that represents the latest values for all keys included in the network's ledger. The state of a network encompasses all past transactions in the network, from the genesis block to the present time.
+   * *State* - Contains up-to-date data that represents the latest values for all keys included in the network's ledger. The state of a network encompasses all past transactions in the network, from the genesis block to the present time.
 
-     Transaction - A record of an event, cryptographically secured with a digital signature, that is verified, ordered, and bundled with other such records into blocks. 
+   * *Transaction* - A record of an event, cryptographically secured with a digital signature, that is verified, ordered, and bundled with other such records into blocks. 
 
-     Transaction Families - Smart contracts in Hyperledger Sawtooth. They define the operations that can be applied to transactions. Transaction families consist of both transaction processors (the server-side logic) and clients (for use from web or mobile applications).
+   * *Transaction Families* - Smart contracts in Hyperledger Sawtooth. They define the operations that can be applied to transactions. Transaction families consist of both transaction processors (the server-side logic) and clients (for use from web or mobile applications).
 
-     Turing-Complete - Named after Alan Turing, an English mathematician and computer scientist, it refers to a computer that can solve any problem that a Turing Machine can. A Turing Machine is a machine that can simulate any computer algorithm, no matter how complicated. Bitcoin scripting language is not Turing-Complete, as there are no looping and branching types of computing sequences. Ethereum's Solidity language is considered Turing-Complete, as it does have looping and branching.
+   * *Turing-Complete* - Named after Alan Turing, an English mathematician and computer scientist, it refers to a computer that can solve any problem that a Turing Machine can. A Turing Machine is a machine that can simulate any computer algorithm, no matter how complicated. Bitcoin scripting language is not Turing-Complete, as there are no looping and branching types of computing sequences. Ethereum's Solidity language is considered Turing-Complete, as it does have looping and branching.
             
- * References
+ * **References**
    * https://courses.edx.org
    * https://www.safaribooksonline.com/library/view/mastering-blockchain/9781787125445/
    
