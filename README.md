@@ -211,6 +211,19 @@
         2. The smart contract sits on the Ethereum public blockchain, and is run on the Ethereum Virtual Machine (EVM). Once hitting a triggering event, like an expiration date or a strike price that has been pre-coded, the smart contract automatically executes as per the business logic (Panel 2)
         3. As an added benefit, regulators are able to scrutinize the market activity on an ongoing basis, without compromising the identity of specific players in a permissionless public blockchain, as Ethereum (Panel 3).
     * **Note:** With the advent of the Ethereum blockchain platform and the scripting functionality or smart contracts that it enables, there are ongoing attempts to do the same for the Bitcoin blockchain, which does not allow for this, due to security reasons. **RSK**(http://www.rsk.co/) is one such smart contract platform that seeks to achieve this "with a 2-way peg to Bitcoin". The added functionality can go a long way in making the Bitcoin blockchain useful for use cases other than cash transfers.  
+ * Exploring Permissionless Blockchains
+   * will look at block heights, transaction times, mining pools, timestamps, and block rewards
+   * Bitcoin
+     * Blocks info - https://blockchain.info/home
+       * ![image](https://user-images.githubusercontent.com/20100300/32278012-806c5a58-bed1-11e7-942c-886157384ecf.png)
+         * *Height* indicates number of blocks in a particular blockchain
+         * *Transactions* column shows how many transactions included in a block
+         * *Total Sent* amount of Bitcoin that was transferred in each of those blocks
+         * *Relayed By* column - miner or mining pool that created that block
+     * Genesis Block - https://blockexplorer.com/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+   * Ethereum
+     * Blocks info - https://etherscan.io/blocks
+     * Genesis Block - https://etherchain.org/block/1
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
