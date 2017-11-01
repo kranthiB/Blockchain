@@ -78,29 +78,7 @@
           * able to record things in real time, up-t0-odate accounting of the state of the world.
           * not batch processing at night anymore
           * more of log-based system, so recording what was happened, as it is happening
-            * its not business process type of software because it is a log / source of the truth / lot of other business logic will be based upon it.
-      * if all the members of distributed ledger are participating in a closed network ( not in public / trustless environment) then they are known as permissioned.    
-      * different hyperledger projects have different trade-offs
-        * Fabric
-          * more centralized ordering service
-          * networks follow hub-and-spoke model
-            * each peer connected to service will run either on one of the nodes, or on a neutral third party.
-            * gossip messages that do the consensus mechanism go through a central hub
-          * that sounds counterintuitive but they are distributed in a sense that the blockchain itself is replicated amongst all the nodes
-          * your data is much more resilient to disruption
-        * Sawtooth
-          * more of like star model
-            * they talk to each other, either one hub , or two hubs, or three hubs away, depending on the size of the network
-        * Iroha
-          * these are designed to function well in a mobile environment
-            * mobile phones can be conneced or disconnected at random
-            * structure is more of a layered network
-              * end clients' mobile phones submit transaction to servers which then do the distributed ledger
-        * Security is much same in all of these
-          * use cryptography and digital signatures to validate all the messages
-          * tampering messages is essentially impossible
-          * immutability of distributed ledger is guaranteed by the cryptography
-          * nature of trusted network(of permissioned) treat like any other back-office service
+            * its not business process type of software because it is a log / source of the truth / lot of other business logic will be based upon it.        
       * *Transactions* may involve the transfer of any asset or record of some service being rendered
         * Record of an event , cryptographically secured with digital signature, that is verified, ordered, and bundled together in to blocks, form the transactions in the block chain
         * *Smart Contract* with in the blockchain may allow automatic execution of transactions upon meeting predefined criteria.
@@ -161,6 +139,26 @@
            * e.g. shares, money, content, property 
          * ![image](https://user-images.githubusercontent.com/20100300/32274491-4d38f180-bec4-11e7-8030-91213d72db44.png)
     * High-level explanation of what Hyderledger is
+      * Fabric
+        * more centralized ordering service
+        * networks follow hub-and-spoke model
+          * each peer connected to service will run either on one of the nodes, or on a neutral third party.
+          * gossip messages that do the consensus mechanism go through a central hub
+        * that sounds counterintuitive but they are distributed in a sense that the blockchain itself is replicated amongst all the nodes
+        * your data is much more resilient to disruption
+      * Sawtooth
+        * more of like star model
+          * they talk to each other, either one hub , or two hubs, or three hubs away, depending on the size of the network
+      * Iroha
+        * these are designed to function well in a mobile environment
+          * mobile phones can be conneced or disconnected at random
+          * structure is more of a layered network
+            * end clients' mobile phones submit transaction to servers which then do the distributed ledger
+      * Security is much same in all of these
+        * use cryptography and digital signatures to validate all the messages
+        * tampering messages is essentially impossible
+        * immutability of distributed ledger is guaranteed by the cryptography
+        * nature of trusted network(of permissioned) treat like any other back-office service
       
             
  * References
