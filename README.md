@@ -101,9 +101,65 @@
           * tampering messages is essentially impossible
           * immutability of distributed ledger is guaranteed by the cryptography
           * nature of trusted network(of permissioned) treat like any other back-office service
+      * *Transactions* may involve the transfer of any asset or record of some service being rendered
+        * Record of an event , cryptographically secured with digital signature, that is verified, ordered, and bundled together in to blocks, form the transactions in the block chain
+        * *Smart Contract* with in the blockchain may allow automatic execution of transactions upon meeting predefined criteria.
+        * *Cryptography* plays a key role in the security, as well as in the immutability of the transactions recorded on the blockchains
+          * It ensures authenticity and immutability of the data being communicated
+          * For blockchain technologies, Cryptography
+            * used to prove that a transaction was created by the right person
+            * also used to link transactions into a block in a tamper-proof way
+            * as well as create links between nodes, to form a blockchain
+      * Diferrences between Blockchains and Databases
+        * blockchain is a write-only data structure, where new entries get appended ono the end of the ledger
+        * new block gets appened to chain by linking previous block's 'hash'
+          * Hash Function - It is used to map data of any size to a fixed length. The output of a hash function is referred to as a hash, hash value, or digest. One important characteristic of a hash function is that, when given a specific input, the hash function will always produce the exact same output.
+        * There are no administration permissions within a blockchain that allow editing or deleting of data
+        * blockchains designed for decentralized applications where as in relational databases ,single entity controls the data
+        * ![image](https://user-images.githubusercontent.com/20100300/32273678-a89e27a6-bec0-11e7-9612-d5c97ae99519.png)
     * Permissioned and Permissionless blockchains and its key characteristics
-       
+      * permissionless like Bitcoin or Ethereum
+        * also known as public blockchain
+        * anyone can join the network
+      * permissioned like different Hyperledger blockchain frameworks
+        * private blockchain
+        * requires pre-verification of participating parties within the network and these parties are usually known to each other.
+        * supply chain management is an ideal use case
     * Various components of DLT including Consensus algorithms and smart contracts.
+      * Peer-to-Peer Network Architecture
+        * systems are directly connected to each other via the inernet without a central server
+        * Peers contribute to the computing power and storage that is required for the upkeep of the network
+        * do not have a single point of attack
+        * Permissionless P2P systems do not require a set amount of peers to be online and are generally slower
+        * Permissioned P2P networks have to guarantee uptime and require a high level of quality of service on the communication links.
+        * ![image](https://user-images.githubusercontent.com/20100300/32274000-1dbe258a-bec2-11e7-9662-ed954e17bdcb.png)
+      * Consensus
+        * is a process whereby the peers synchronize the data on the blockchain.
+        * mechanisms or algorithms
+          * Proof of work
+          * Proof of stake
+          * Proof of Elapsed Time
+          * Simplified Byzantine Fault Tolerance
+          * Bitcoin and ethereum uses Proof of work currently, but they are moving towards proof of stake
+          * The Hyperledger Sawtooth uses Proof of Elapsed Time.
+       * Immutability of Data
+         * *unchanging over time* feature makes the blockchain useful for accounting / financial transactions / identity management / asset ownership, management and transfer
+         * Once a transaction is written onto the blockchain, no one can change it, or, at least, it would be extremely difficult to change it
+         * it don't mean that the data can't be changed, it means it is extremely hard to change without collusion, and if you try, it's extremely easy to detect the attempt.
+         * ![image](https://user-images.githubusercontent.com/20100300/32274352-b4b448a6-bec3-11e7-8d28-e96c6d32f304.png)
+       * Blockchain applications
+         * Financial transactions
+           * bitcoins, UPort, KYC-Chain, Netki, etc.
+         * Identity management and autentication
+           * https://letstalkpayments.com/22-companies-leveraging-blockchain-for-identity-management-and-authentication/
+         * Even more
+           * https://www.coindesk.com/7-cool-decentralized-apps-built-ethereum/
+       * Smart Contracts
+         * computer programs that execute predefined actions when certain conditions within the system are met
+         * provide the language of transactions that allow the ledger state to be modified
+         * They can facilitate the exchange and transfer of anything of value 
+           * e.g. shares, money, content, property 
+         * ![image](https://user-images.githubusercontent.com/20100300/32274491-4d38f180-bec4-11e7-8030-91213d72db44.png)
     * High-level explanation of what Hyderledger is
       
             
