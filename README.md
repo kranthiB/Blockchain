@@ -73,11 +73,40 @@
               * Merkle trees are used to summarize all the transactions in a block, producing an overall digital fingerprint of the entire set of transactions, providing a very efficient process to verify whether a transaction is included in a block
                 * ![image](https://upload.wikimedia.org/wikipedia/commons/7/7a/Bitcoin_Block_Data.png)
               * http://chimera.labs.oreilly.com/books/1234000001802/ch07.html#merkle_trees
-        
-          
+        * Blockchain able to create distributed consensus between mutually distrustful parties, in many ways
+          * allows to create an instantaneous single source of truth
+          * able to record things in real time, up-t-odate accounting of the state of the world.
+          * not batch processing at night anymore
+          * more of log-based system, so recording what was happened, as it is happening
+            * its not business process type of software because it is a log / source of the truth / lot of other business logic will be based upon it.
+        * if all the members of distributed ledger are participating in a closed network ( not in public / trustless environment) then they are known as permissioned.    
+        * different hyperledger projects have different trade-offs
+          * Fabric
+            * more centralized ordering service
+            * networks follow hub-and-spoke model
+              * each peer connected to service will run either on one of the nodes, or on a neutral third party.
+              * gossip messages that do the consensus mechanism go through a central hub
+            * that sounds counterintuitive but they are distributed in a sense that the blockchain itself is replicated amongst all the nodes
+              * your data is much more resilient to disruption
+          * Sawtooth
+            * more of like star model
+              * they talk to each other, either one hub , or two hubs, or three hubs away, depending on the size of the network
+          * Iroha
+            * these are designed to function well in a mobile environment
+              * mobile phones can be conneced or disconnected at random
+              * structure is more of a layered network
+                * end clients' mobile phones submit transaction to servers which then do the distributed ledger
+        * Security is much same in all of these
+          * use cryptography and digital signatures to validate all the messages
+          * tampering messages is essentially impossible
+          * immutability of distributed ledger is guaranteed by the cryptography
+          * nature of trusted network(of permissioned) treat like any other back-office service
     * Permissioned and Permissionless blockchains and its key characteristics
+       
     * Various components of DLT including Consensus algorithms and smart contracts.
     * High-level explanation of what Hyderledger is
+      
+            
  * References
    * https://courses.edx.org
    * https://www.safaribooksonline.com/library/view/mastering-blockchain/9781787125445/
