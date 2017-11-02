@@ -348,6 +348,8 @@
  * Lack of Know-How
    * The lack of know-how (and know-whom and know-where) around distributed ledger technologies and the availability of experts in the area is a major challenge in the adoption of distributed ledger technologies
    * https://coin.dance/stats/blockchain
+ * The Promise of Buisness Blockchain Technologies
+   * 
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
