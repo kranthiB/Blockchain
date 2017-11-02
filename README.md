@@ -372,6 +372,30 @@
      * **Regulators** verify that the tuna has been legally and sustainably caught.
      * **Miriam** is a restaurant owner who will serve as the recipient in this situation.
      * ![image](https://user-images.githubusercontent.com/20100300/32329225-66687150-c002-11e7-8310-1bf721dd8a87.png)
+   * Featured Hyperledger Sawtooth Elements
+     * **Transaction validators** validate transactions.
+     * **Transaction families** are smart contracts in Hyperledger Sawtooth
+       * define the operations that can be applied to transactions
+       * consist of both transaction processors (the server-side logic) and clients (for use from Web or mobile applications)
+     * **Transaction processor** is the server-side business logic of transaction families that acts upon network assets.
+     * **Transaction batches** are clusters of transactions that are either all committed to state or are all not committed to state.
+     * **The network layer** is responsible for communicating between validators in a Hyperledger Sawtooth network, including performing initial connectivity, peer discovery, and message handling.
+     * **Global state** contains the current state of the ledger and a chain of transaction invocations
+       * The state for all transaction families is represented on each validator
+       * The process of block validation on each validator ensures that the same transactions result in the same state transitions, and that the resulting data is the same for all participants in the network
+       * The state is split into namespaces, which allow flexibility for transaction family authors to define, share, and reuse global state data between transaction processors
+   * Why Sawtooth?
+     * to ensure that tuna purchasing is legally and sustainably caught
+     * ability to track an asset's (in this case tuna) provenance and journey
+     * ability to batch transactions together allows for all tuna within a catch to be entered as a whole
+     * The distributed state agreement, novel consensus algorithm, and decoupled business logic from the consensus layer allow to be confident that buying tuna that has been legally caught.
+   * Supply chain
+     * Tuna asset
+       * details are saved in the global state as a key/value pair based on the specifications of a transaction family,
+       * while the transaction processor allows individual's application to effectively create a transaction on the ledger
+         * **var tuna = { id: ‘0002’, holder: ‘Sarah’, location: { latitude: '15.623036831528264', longitude: '-158.466796875'}, when: '20170635123546', weight: ‘58lbs’ } **
+     * Recording a Catch
+       * Using batches, individual is able to record many tuna together, while still being able to specify data for each tuna
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
