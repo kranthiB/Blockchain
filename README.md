@@ -371,6 +371,7 @@
      * **Tuna processing plant** processes and bags the tuna after they have been caught.
      * **Regulators** verify that the tuna has been legally and sustainably caught.
      * **Miriam** is a restaurant owner who will serve as the recipient in this situation.
+     * ![image](https://user-images.githubusercontent.com/20100300/32329225-66687150-c002-11e7-8310-1bf721dd8a87.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
