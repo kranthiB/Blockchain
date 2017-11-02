@@ -360,7 +360,17 @@
    * Go Language
    * Docker
    * Docker Compose
-   * VirtualBox
+   * VirtualBox (for windows)
+ * Hyperledger Sawtooh (Usecase)
+   * consensus algorithm Proof of Elapsed Time
+   * transaction families
+   * batches
+   * validators
+   * Defining Our Actors
+     * **Sarah** is the fisherman who sustainably and legally catches tuna.
+     * **Tuna processing plant** processes and bags the tuna after they have been caught.
+     * **Regulators** verify that the tuna has been legally and sustainably caught.
+     * **Miriam** is a restaurant owner who will serve as the recipient in this situation.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
