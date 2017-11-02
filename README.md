@@ -335,6 +335,19 @@
      * the platform entails a generalization of the blockchain protocol (the technology called Tangle) that sits at the backend of the IOTA platform.
      * Instead of paying miners to validate the transactions, the architecture of the network involves peer-based validation
        * This allows the platform to be completely free of cost, without facing the scaling challenges that are inherent in the first generation of blockchains. 
+ * Challenges in the Adoption/Deployment of Distributed Ledger Technologies
+   * number of challenges to the widespread use of permissioned distributed ledger technologies
+     * Key among them are challenges around the lack of standards, regulatory challenges, and the lack of knowledge about distributed ledger technologies
+ * Standards
+   * https://www.iso.org/committee/6266604.html
+   * ![image](https://user-images.githubusercontent.com/20100300/32312191-659a36c2-bfc2-11e7-8f89-f9738ea3bac1.png)
+ * Regulation
+   * the lack of regulation around transactions on the blockchain creates an environment of uncertainty for all players
+   * no regulatory guidelines governing smart contracts, causing much anxiety among various players like lawyers, regulators, programmers, and businesses
+   * lack of regulatory guidelines, along with a lack of industry standards, exacerbates hindrances to rapid adoption of DLT
+ * Lack of Know-How
+   * The lack of know-how (and know-whom and know-where) around distributed ledger technologies and the availability of experts in the area is a major challenge in the adoption of distributed ledger technologies
+   * https://coin.dance/stats/blockchain
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
