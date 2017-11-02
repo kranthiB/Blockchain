@@ -296,7 +296,45 @@
      * Lottery-based algorithms are advantageous in that they can scale to a large number of nodes
      * Voting-based algorithms provide low-latency finality.
      * ![image](https://user-images.githubusercontent.com/20100300/32283552-e73ea546-bee1-11e7-9c70-5dfdd6030454.png)
-
+ * Hyperledger
+   * open source effort created to advance cross-industry blockchain technologies
+   * boasts a host of enterprise-ready solutions.
+   * are generally permissioned blockchains
+     * means that the parties that join the network are authenticated and authorized to participate on the network.
+   * main goal is to create enterprise grade, open source, distributed ledger frameworks and code bases to support business use cases
+   * Advantages of Using a Permissioned Blockchain over a Permissionless Blockchain
+     * permissionless blockchains - 
+       * anyone can join the network, as well as write and read transactions
+       * there could be some malicious actors within the network as actors in the system are not known
+     * provides all the capabilities of the blockchain architecture - data privacy, information sharing, immutability, with a full stack of security protocols - all for the enterprise
+ * Other DLT
+   * Chain Core 
+     * created by chain.com
+     * intially has been designed for financial serve institutions
+     * for things like security / bonds / currencies has strong ties with Visa / Citygroup and Nasdaq
+     * is an enterprise permissioned blockchain system that is mostly focused on financial services, like currencies, securities, derivatives, gift cards, and loyalty points
+     * the creation and transfer of assets is decentralized
+     * https://chain.com/technology/
+   * Corda
+     * designed to record / manage and automate legal agreements between businesses
+     * creaed by R3
+     * which features a blockchain-style P2P network; however, it is not a blockchain platform
+       * Unlike blockchains, which involve global availability of data across the network and third party validators, Corda only allows information access and validation functions to parties actually involved in the transaction
+     * https://www.corda.net/
+   * Quorum
+     * is permissioned implementation of ethereum 
+     * which supports data privacy
+       * it achieves this by allowing data visibility on need-to-know basis by voting based consensus algorithm
+     * it's an open source created by JPMorgan 
+     * is designed to support "both transaction-level privacy and network-wide transparency"
+     * The network validates all smart contracts and overall system state through the involvement of all running nodes
+     * As with other permissioned ledgers, regulatory compliance is front and center in the Quorum platform
+   * IOTA
+     * It is the first cryptocurrency that provides the whole ecosystem based on blockless blockchain" to enable machine-to-machine (M2M) transactions
+     * is more than just a cryptocurrency
+     * the platform entails a generalization of the blockchain protocol (the technology called Tangle) that sits at the backend of the IOTA platform.
+     * Instead of paying miners to validate the transactions, the architecture of the network involves peer-based validation
+       * This allows the platform to be completely free of cost, without facing the scaling challenges that are inherent in the first generation of blockchains. 
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
