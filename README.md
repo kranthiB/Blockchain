@@ -411,6 +411,7 @@
      * regulators will need to query the ledger to confirm that it is legally catching fish  
      * At the same time, tuna processing plants will need to record their processing and shipping of the tuna on the ledge
      * Summary of Transaction Flow
+       * ![image](https://user-images.githubusercontent.com/20100300/32330164-4b88c008-c005-11e7-9519-dd0ac8d3c7b4.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
