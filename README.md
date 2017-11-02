@@ -353,6 +353,14 @@
      * Supply Chain Management
      * Provenance
      * Property Rights
+ * Technical Requirements
+   * cURL
+   * Node.js
+   * npm package manager
+   * Go Language
+   * Docker
+   * Docker Compose
+   * VirtualBox
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
