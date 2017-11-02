@@ -397,6 +397,22 @@
      * Recording a Catch
        * Using batches, individual is able to record many tuna together, while still being able to specify data for each tuna
  * **Terminology**
+       * If one of the tuna transactions is invalid, the entire shipment is invalidated
+     * Reaching Consensus
+       * Now, network’s consensus algorithm is run to choose a node to publish the transaction block
+         * By default, the Proof of Elapsed Time consensus algorithm is used
+       * the transaction validator with the shortest wait time publishes the transaction block
+       * The transaction block is then broadcast to the publishing nodes
+       * Each node within the network receives the transaction block
+         * validators verify whether the transaction is valid or not
+         * If the transaction is validated, the global state is updated
+       * With the global state adjusted
+         * processing plant, the regulator, and others are able to see the details of the catch
+           * thus, keeping the supply chain transparent and verifiable.
+     * regulators will need to query the ledger to confirm that it is legally catching fish  
+     * At the same time, tuna processing plants will need to record their processing and shipping of the tuna on the ledge
+     * Summary of Transaction Flow
+     
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
    * *Byzantine Fault Tolerance Algorithm* - A consensus algorithm designed to defend against failures in the system caused by forged or malicious messages. In order to be fault tolerant of a Byzantine fault, the number of nodes that must reach consensus is 2f+1 in a system containing 3f+1, where f is the number of faults in the system. 
