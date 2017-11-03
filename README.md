@@ -519,6 +519,16 @@
        * RW sets are then signed by the endorsing peer, and returned to the client application to be used in future steps of the transaction flow.
        * ![image](https://user-images.githubusercontent.com/20100300/32364431-d469c422-c09a-11e7-9f1b-6de9bbefee1f.png)
        * Endorsing peers must hold smart contracts in order to simulate the transaction proposals.
+       * Transaction Endorsement
+         * is a signed response to the results of the simulated transaction
+         * method of transaction endorsements depends on the endorsement policy which is specified when the chaincode is deployed
+         * For instance,
+           * the majority of the endorsing peers must endorse the transaction
+         * an endorsement policy is specified for a specific chaincode, different channels can have different endorsement policies
+     * Step-3
+       * application then submits the endorsed transaction and the RW sets to the ordering service
+       * Ordering happens across the network, in parallel with endorsed transactions and RW sets submitted by other applications.
+     
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
