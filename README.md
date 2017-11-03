@@ -528,7 +528,8 @@
      * Step-3
        * application then submits the endorsed transaction and the RW sets to the ordering service
        * Ordering happens across the network, in parallel with endorsed transactions and RW sets submitted by other applications.
-     
+       * ![image](https://user-images.githubusercontent.com/20100300/32364534-6c6f18d0-c09b-11e7-8741-9e8a16e08707.png)
+     * Step-4
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
