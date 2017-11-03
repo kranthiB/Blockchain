@@ -562,6 +562,9 @@
        * ![image](https://user-images.githubusercontent.com/20100300/32372820-7a24fa5a-c0bc-11e7-844d-5b658f69f8ae.png)
        * Committing peers are responsible for adding blocks of transactions to the shared ledger and updating the world state
          * They may hold smart contracts, but it is not a requirement.
+     * Step-6
+       * Lastly, the committing peers asynchronously notify the client application of the success or failure of the transaction
+         * Applications will be notified by each committing peer.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
