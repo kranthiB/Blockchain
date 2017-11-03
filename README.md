@@ -485,6 +485,7 @@
      * In a separate business agreement, Sarah and Miriam agree on a special price of $50 per pound
        * They use the red channel's chaincode contract stipulating $50/lb
        * The red channel's ledger is updated with a block containing this transaction
+     * ![image](https://user-images.githubusercontent.com/20100300/32364110-fd97d782-c098-11e7-8efc-a2d0c4bc7094.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
