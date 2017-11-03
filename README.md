@@ -425,6 +425,7 @@
      * **Regulators** verify that the tuna has been legally and sustainably caught.
      * **Miriam** is a restaurant owner who will serve as the end user, in this situation.
      * **Carl** is another restaurant owner fisherman Sarah can sell tuna to.
+     * ![image](https://user-images.githubusercontent.com/20100300/32363454-7b267e0a-c095-11e7-937f-d5681ce92c3f.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
