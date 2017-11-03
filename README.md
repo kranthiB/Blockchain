@@ -531,6 +531,7 @@
        * ![image](https://user-images.githubusercontent.com/20100300/32364534-6c6f18d0-c09b-11e7-8741-9e8a16e08707.png)
      * Step-4
        * ordering service takes the endorsed transactions and RW sets, orders this information into a block, and delivers the block to all committing peers.
+       * ![image](https://user-images.githubusercontent.com/20100300/32364625-e4e488ae-c09b-11e7-9490-c0315218a702.png)
        * Ordering Service
          * is made up of a cluster of orderers, does not process transactions, smart contracts, or maintains the shared ledger
          * accepts the endorsed transactions and specifies the order in which those transactions will be committed to the ledger
