@@ -565,6 +565,7 @@
      * Step-6
        * Lastly, the committing peers asynchronously notify the client application of the success or failure of the transaction
          * Applications will be notified by each committing peer.
+       * ![image](https://user-images.githubusercontent.com/20100300/32372908-dabb7f92-c0bc-11e7-8145-8a97cbdf1563.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
