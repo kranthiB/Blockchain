@@ -446,6 +446,33 @@
      * In a traditional public blockchain,  once Sarah and Miriam have completed their transaction,
        * the entire network is able to view the details of this agreement, especially the fact that Sarah gave Miriam a special price
      * ![image](https://user-images.githubusercontent.com/20100300/32363777-fc5f1eea-c096-11e7-853a-343b8c24c159.png)
+     * To remedy this, Sarah wants the specifics of her deal to not be available to everyone on the network, but still have every actor in the network be able to view the details of the fish she is selling
+     * Using Hyperledger Fabric's feature of channels, Sarah can privately agree on the terms with Miriam, such that only the two of them can see them, without anyone else knowing the specifics.
+   * The Regulators
+     * gain entry to confirm, verify, and view details from the ledger
+     * application will allow these actors to query the ledger and see the details of each of Sarah’s catches to confirm that she is legally catching her fish
+     * Regulators only need to have query access, and do not need to add entries to the ledger
+       * they may be able to adjust who can gain entry to the network and/or be able to remove fishermen from the network
+   * Gaining Network Membership
+     * To handle network membership and identity,
+       * **membership service providers** (MSP) manage user IDs, and authenticate all the participants in the network.
+     * network can be governed by one or more MSPs. This provides
+       * modularity of membership operations
+       * interoperability across different membership standards and architectures
+     * the regulator, the approved fishermen, and the approved restaurateurs should be the only ones allowed to join the network
+     * scenario has two separate chaincodes, which are run on three separate channels
+       * The two chaincodes are: 
+         * one for the price agreement between the fisherman and the restaurateur
+         * one for the transfer of tuna
+       * The three channels are
+         * one for the price agreement between Sarah and Miriam
+         * one for the price agreement between Sarah and Carl
+         * one for the transfer of tuna
+     * Each member of this network knows about each other and their identity
+     * channels provide privacy and confidentiality of transactions.
+     * MSPs also allow for dynamic membership to add or remove members to maintain integrity and operation of the supply chain
+       * For example, if Sarah was found to be catching her fish illegally, she can have her membership revoked, without compromising the rest of the network
+       * This feature is critical, especially for enterprise applications, where business relationships change over time
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
