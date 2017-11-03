@@ -512,6 +512,13 @@
        * ![image](https://user-images.githubusercontent.com/20100300/32364306-1639fc7e-c09a-11e7-83bb-4705752a46a6.png)
        * Client applications are commonly referred to as applications or clients, and allow people to communicate with the blockchain network
          * Application developers can leverage the Hyperledger Fabric network through the application SDK
+     * Step-2
+       * Each endorsing peer simulates the proposed transaction, without updating the ledger
+       * endorsing peers will capture the set of **R**ead and **W**ritten data, called **RW** Sets.
+       * These RW sets capture what was read from the current world state while simulating the transaction, as well as what would have been written to the world state had the transaction been executed
+       * RW sets are then signed by the endorsing peer, and returned to the client application to be used in future steps of the transaction flow.
+       * 
+       * Endorsing peers must hold smart contracts in order to simulate the transaction proposals.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
