@@ -538,6 +538,29 @@
          * Fabric v1.0 architecture has been designed such that the specific implementation of 'ordering' (Solo, Kafka, BFT) becomes a pluggable component
          * default ordering service for Hyperledger Fabric is Kafka.
          * it is a modular component of Hyperledger Fabric.
+         * Ordering
+           * Transactions within a timeframe are sorted into a block and are committed in sequential order.
+           * In a blockchain network, transactions have to be written to the shared ledger in a consistent order
+           * order of transactions has to be established to ensure that the updates to the world state are valid when they are committed to the network
+           * Unlike the Bitcoin blockchain, where ordering occurs through the solving of a cryptographic puzzle, or mining, Hyperledger Fabric allows the organizations running the network to choose the ordering mechanism that best suits that network
+           * three ordering mechanism
+             * **SOLO**
+               * typically used by developers experimenting with Hyperledger Fabric networks
+               * involves a single ordering node
+             * **Kafka**
+               * recommended for production use
+             * **SBFT** - not yet been implemented in Fabric v1.0
+               * Simplified Byzantine Fault Tolerance
+               * both crash fault-tolerant and byzantine fault-tolerant
+                 * it can reach agreement even in the presence of malicious or faulty nodes
+             * three ordering mechanisms provide alternate methodologies for agreeing on the order of transactions
+     * Step-5
+       * committing peer validates the transaction by checking to make sure that the RW sets still match the current world state
+         * Specifically, that the Read data that existed when the endorsers simulated the transaction is identical to the current world state
+         * When the committing peer validates the transaction, the transaction is written to the ledger, and the world state is updated with the Write data from the RW Set.
+         * If the transaction fails, that is, if the committing peer finds that the RW set does not match the current world state, the transaction ordered into a block will still be included in that block, but it will be marked as invalid, and the world state will not be updated.
+       * Committing peers are responsible for adding blocks of transactions to the shared ledger and updating the world state
+         * They may hold smart contracts, but it is not a requirement.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
