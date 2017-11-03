@@ -577,7 +577,13 @@
          * However, there is an overlap between endorsing and committing peers on the system
            * Endorsing peers must have access to and hold smart contracts, in addition to fulfilling the role of a committing peer
            * Endorsing peers do commit blocks, but committing peers do not endorse transactions.
-         
+       * Endorsing peers verify the client signature, and execute a chaincode function to simulate the transaction
+         * The output is the chaincode results, a set of key/value versions that were read in the chaincode (Read set), and the set of keys/values that were written by the chaincode
+         * The proposal response gets sent back to the client, along with an endorsement signature
+         * proposal responses are sent to the orderer to be ordered
+         * The orderer then orders the transactions into a block, which it forwards to the endorsing and committing peers
+         * The RW sets are used to verify that the transactions are still valid before the content of the ledger and world state is updated
+       * Finally, the peers asynchronously notify the client application of the success or failure of the transaction.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
