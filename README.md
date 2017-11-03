@@ -473,6 +473,18 @@
      * MSPs also allow for dynamic membership to add or remove members to maintain integrity and operation of the supply chain
        * For example, if Sarah was found to be catching her fish illegally, she can have her membership revoked, without compromising the rest of the network
        * This feature is critical, especially for enterprise applications, where business relationships change over time
+   * Summary of Demonstrated Scenario
+     * Sarah catches a tuna and uses the supply chain application’s user interface to record all the details about the catch to the ledger
+       * Before it reaches the ledger, the transaction is passed to the endorsing peers on the network, where it is then endorsed
+       * The endorsed transaction is sent to the ordering service, to be ordered into a block
+       * This block is then sent to the committing peers in the network, where it is committed after being validated
+     * As the tuna is passed along the supply chain, regulators may use their own application to query the ledger for details about specific catches (excluding price, since they do not have access to the price-related chaincode).
+     * Sarah may enter into an agreement with a restaurateur Carl, and agree on a price of $80 per pound
+       * They use the blue channel for the chaincode contract stipulating $80/lb
+       * The blue channel's ledger is updated with a block containing this transaction
+     * In a separate business agreement, Sarah and Miriam agree on a special price of $50 per pound
+       * They use the red channel's chaincode contract stipulating $50/lb
+       * The red channel's ledger is updated with a block containing this transaction
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
