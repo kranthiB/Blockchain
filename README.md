@@ -486,6 +486,31 @@
        * They use the red channel's chaincode contract stipulating $50/lb
        * The red channel's ledger is updated with a block containing this transaction
      * ![image](https://user-images.githubusercontent.com/20100300/32364110-fd97d782-c098-11e7-8efc-a2d0c4bc7094.png)
+   * Roles within a Hyperledger Fabric Network
+     * Clients
+       * applications that act on behalf of a person to propose transactions on the network.
+     * Peers
+       * maintain the state of the network and a copy of the ledge
+       * types of peers
+         * endorsing
+           * simulate and endorse transactions
+         * committing
+           * verify endorsements and validate transaction results, prior to committing transactions to the blockchain
+       * All peers commit blocks to the distributed ledger.
+     * Ordering Service
+       * accepts endorsed transactions, orders them into a block, and delivers the blocks to the committing peers
+   * How to Reach Consensus
+     * process of reaching agreement on the next set of transactions to be added to the ledger
+     * is made up of three distinct steps:
+       * Transaction endorsement
+       * Ordering
+       * Validation and commitment.
+     * three steps ensure the policies of a network are upheld
+   * Transaction Flow
+     * Step-1
+       * transactions start out with client applications sending transaction proposals, or, in other words, proposing a transaction to endorsing peers.
+       * Client applications are commonly referred to as applications or clients, and allow people to communicate with the blockchain network
+         * Application developers can leverage the Hyperledger Fabric network through the application SDK
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
