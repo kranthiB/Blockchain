@@ -445,7 +445,7 @@
      * However, Sarah agrees to give Miriam a special price of $50 per pound of tuna, rather than her usual rate.
      * In a traditional public blockchain,  once Sarah and Miriam have completed their transaction,
        * the entire network is able to view the details of this agreement, especially the fact that Sarah gave Miriam a special price
-       
+     * ![image](https://user-images.githubusercontent.com/20100300/32363777-fc5f1eea-c096-11e7-853a-343b8c24c159.png)
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
