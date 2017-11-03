@@ -559,6 +559,7 @@
          * Specifically, that the Read data that existed when the endorsers simulated the transaction is identical to the current world state
          * When the committing peer validates the transaction, the transaction is written to the ledger, and the world state is updated with the Write data from the RW Set.
          * If the transaction fails, that is, if the committing peer finds that the RW set does not match the current world state, the transaction ordered into a block will still be included in that block, but it will be marked as invalid, and the world state will not be updated.
+       * ![image](https://user-images.githubusercontent.com/20100300/32372820-7a24fa5a-c0bc-11e7-844d-5b658f69f8ae.png)
        * Committing peers are responsible for adding blocks of transactions to the shared ledger and updating the world state
          * They may hold smart contracts, but it is not a requirement.
  * **Terminology**
