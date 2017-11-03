@@ -517,7 +517,7 @@
        * endorsing peers will capture the set of **R**ead and **W**ritten data, called **RW** Sets.
        * These RW sets capture what was read from the current world state while simulating the transaction, as well as what would have been written to the world state had the transaction been executed
        * RW sets are then signed by the endorsing peer, and returned to the client application to be used in future steps of the transaction flow.
-       * 
+       * ![image](https://user-images.githubusercontent.com/20100300/32364431-d469c422-c09a-11e7-9f1b-6de9bbefee1f.png)
        * Endorsing peers must hold smart contracts in order to simulate the transaction proposals.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
