@@ -566,6 +566,18 @@
        * Lastly, the committing peers asynchronously notify the client application of the success or failure of the transaction
          * Applications will be notified by each committing peer.
        * ![image](https://user-images.githubusercontent.com/20100300/32372908-dabb7f92-c0bc-11e7-8145-8a97cbdf1563.png)
+     * Identity Verification
+       * In addition to the multitude of endorsement, validity, and versioning checks that take place
+         * there are also ongoing identity verifications happening during each step of the transaction flow
+       * Access control lists are implemented on the hierarchical layers of the network (from the ordering service down to channels), and payloads are repeatedly signed, verified, and authenticated as a transaction proposal passes through the different architectural components
+     * Summary
+       * It is important to note that the state of the network is maintained by peers, and not by the ordering service or the client
+       * Normally, you will design your system such that different machines in the network play different roles
+         * That is, machines that are part of the ordering service should not be set up to also endorse or commit transactions, and vice versa
+         * However, there is an overlap between endorsing and committing peers on the system
+           * Endorsing peers must have access to and hold smart contracts, in addition to fulfilling the role of a committing peer
+           * Endorsing peers do commit blocks, but committing peers do not endorse transactions.
+         
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
