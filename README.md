@@ -426,6 +426,26 @@
      * **Miriam** is a restaurant owner who will serve as the end user, in this situation.
      * **Carl** is another restaurant owner fisherman Sarah can sell tuna to.
      * ![image](https://user-images.githubusercontent.com/20100300/32363454-7b267e0a-c095-11e7-937f-d5681ce92c3f.png)
+   * Featured Elements
+     * **Channels** are data partitioning mechanisms that allow transaction visibility for stakeholders only. Each channel is an independent chain of transaction blocks containing only transactions for that particular channel.
+     * The **chaincode** (Smart Contracts) encapsulates both the asset definitions and the business logic (or transactions) for modifying those assets. Transaction invocations result in changes to the ledger.
+     * The **ledger** contains the current world state of the network and a chain of transaction invocations. A shared, permissioned ledger is an append-only system of records and serves as a single source of truth.
+     * The **network** is the collection of data processing peers that form a blockchain network. The network is responsible for maintaining a consistently replicated ledger.
+     * The **ordering service** is a collection of nodes that orders transactions into a block.
+     * The **world state** reflects the current data about all the assets in the network. This data is stored in a database for efficient access. Current supported databases are LevelDB and CouchDB.
+     * The **membership service provider** (MSP) manages identity and permissioned access for clients and peers.
+   * the catch
+     * details are saved in the world state as a key/value pair based on the specifications of a chaincode contract
+       * var tuna = { id: ‘0001’, holder: ‘Sarah’, location: { latitude: '41.40238', longitude: '2.170328'}, when: '20170630123546', weight: ‘58lbs’, vessel : ‘9548E’ }
+       * allowing Sarah’s application to effectively create a transaction on the ledger
+   * The Incentives
+     * Miriam is a restaurant owner looking to source low cost, yet high quality tuna that have been responsibly caught
+   * The Sale
+     * Normally, Sarah sells her tuna to restaurateurs, such as Carl, for $80 per pound
+     * However, Sarah agrees to give Miriam a special price of $50 per pound of tuna, rather than her usual rate.
+     * In a traditional public blockchain,  once Sarah and Miriam have completed their transaction,
+       * the entire network is able to view the details of this agreement, especially the fact that Sarah gave Miriam a special price
+       
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
