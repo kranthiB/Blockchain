@@ -509,6 +509,7 @@
    * Transaction Flow
      * Step-1
        * transactions start out with client applications sending transaction proposals, or, in other words, proposing a transaction to endorsing peers.
+       * ![image](https://user-images.githubusercontent.com/20100300/32364306-1639fc7e-c09a-11e7-83bb-4705752a46a6.png)
        * Client applications are commonly referred to as applications or clients, and allow people to communicate with the blockchain network
          * Application developers can leverage the Hyperledger Fabric network through the application SDK
  * **Terminology**
