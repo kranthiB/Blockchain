@@ -412,6 +412,8 @@
      * At the same time, tuna processing plants will need to record their processing and shipping of the tuna on the ledge
      * Summary of Transaction Flow
        * ![image](https://user-images.githubusercontent.com/20100300/32330164-4b88c008-c005-11e7-9519-dd0ac8d3c7b4.png)
+     * Application Flow
+       * ![image](https://user-images.githubusercontent.com/20100300/32363117-a6cf6294-c093-11e7-90ef-9906e61ac609.png)
    * Requirements Supported by Hyperledger Sawtooth
      * Permissioned and permissionless infrastructure
      * Modular blockchain architecture
