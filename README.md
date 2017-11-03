@@ -419,6 +419,12 @@
      * Modular blockchain architecture
      * Scalability, which is good for larger blockchain networks due to higher throughput
      * Many languages for transaction logic.
+ * Hyperledger Fabric (Usecase)
+   * Defining Our Actors
+     * **Sarah** is the fisherman who sustainably and legally catches tuna.
+     * **Regulators** verify that the tuna has been legally and sustainably caught.
+     * **Miriam** is a restaurant owner who will serve as the end user, in this situation.
+     * **Carl** is another restaurant owner fisherman Sarah can sell tuna to.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
