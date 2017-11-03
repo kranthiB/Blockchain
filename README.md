@@ -530,6 +530,13 @@
        * Ordering happens across the network, in parallel with endorsed transactions and RW sets submitted by other applications.
        * ![image](https://user-images.githubusercontent.com/20100300/32364534-6c6f18d0-c09b-11e7-8741-9e8a16e08707.png)
      * Step-4
+       * ordering service takes the endorsed transactions and RW sets, orders this information into a block, and delivers the block to all committing peers.
+       * Ordering Service
+         * is made up of a cluster of orderers, does not process transactions, smart contracts, or maintains the shared ledger
+         * accepts the endorsed transactions and specifies the order in which those transactions will be committed to the ledger
+         * Fabric v1.0 architecture has been designed such that the specific implementation of 'ordering' (Solo, Kafka, BFT) becomes a pluggable component
+         * default ordering service for Hyperledger Fabric is Kafka.
+         * it is a modular component of Hyperledger Fabric.
  * **Terminology**
    * *Block* - A set of transactions that are bundled together and added to the chain at the same time.
 
